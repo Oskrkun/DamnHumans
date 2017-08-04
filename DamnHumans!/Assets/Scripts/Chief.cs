@@ -107,8 +107,9 @@ public class Chief : MonoBehaviour {
     }
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if (collision.tag == "Player")
+		if (collision.tag == "Player" && GetComponent<Goblin>().attacking)
 		{
+			collision.GetComponent<Goblin> ().StopAttack ();
 			nearGoblins.Remove(collision.gameObject);
 		}
 	}

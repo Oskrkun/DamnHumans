@@ -6,9 +6,14 @@ public class EnemySpawn : MonoBehaviour {
     private float timer;
 	public float timeToSpawn;
     public GameObject objectToSpawn;
+	public Transform positionSpawn;
+	public int cantObjects;
 
 	public bool spawnAndDestroy;
 	public bool spawnInATime;
+	public Transform destinyPoint;
+	public float destinyRange;
+
 
 	// Use this for initialization
 	void Start () {
@@ -37,12 +42,39 @@ public class EnemySpawn : MonoBehaviour {
 	}
     void SpawnAndDestroyObject()
     {
-        Instantiate(objectToSpawn,transform.position,Quaternion.identity);
-        Destroy(gameObject);
-    }
+		if (objectToSpawn.name == "HumanWarrior") 
+		{
+			for (int i = 0; i < cantObjects; i++) 
+			{
+				GameObject humanWarrior =	Instantiate (objectToSpawn, positionSpawn.position, Quaternion.identity);
+				humanWarrior.GetComponent<HumanWarrior> ().setDestinyPoint (destinyPoint);
+				humanWarrior.GetComponent<HumanWarrior> ().setDestinyRange (destinyRange);
+			}
+		} 
+		else 
+		{
+		
+			for (int i = 0; i < cantObjects; i++) 
+			{
+				Instantiate (objectToSpawn, positionSpawn.position, Quaternion.identity);
+
+			}
+		}
+		Destroy(gameObject);
+    
+	}
 	void SpawnInATimeObject()
 	{
-		Instantiate(objectToSpawn,transform.position,Quaternion.identity);
+		if(objectToSpawn.name=="HumanWarrior")
+		{
+			for (int i = 0; i < cantObjects; i++) 
+			{
+				GameObject humanWarrior =	Instantiate (objectToSpawn, positionSpawn.position, Quaternion.identity);
+				humanWarrior.GetComponent<HumanWarrior> ().setDestinyPoint (destinyPoint);
+				humanWarrior.GetComponent<HumanWarrior> ().setDestinyRange (destinyRange);
+			}
+		}
 		timer = timeToSpawn;
 	}
+
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     public int hp;
+
     // Use this for initialization
     void Start () {
 		
@@ -21,4 +22,6 @@ public class Enemy : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+
 }

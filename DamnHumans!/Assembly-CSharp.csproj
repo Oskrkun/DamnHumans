@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\EnemySpawn.cs" />
      <Compile Include="Assets\Scripts\FirstEnemy\FirstEnemy.cs" />
      <Compile Include="Assets\Scripts\Goblin.cs" />
+     <Compile Include="Assets\Scripts\HumanWarrior.cs" />
      <Compile Include="Assets\Scripts\LevelState.cs" />
      <Compile Include="Assets\Scripts\NearEnemy\Tower.cs" />
      <Compile Include="Assets\Scripts\SelectGoblin.cs" />

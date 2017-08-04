@@ -1,14 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Goblin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HumanWarrior.cs">
     <Files>
-      <File FileName="Assets\Scripts\SpawnObjects.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Arrow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Chief.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Goblin.cs" Line="86" Column="78" />
-      <File FileName="Assets\Scripts\AspectUtility.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Chief.cs" Line="110" Column="68" />
+      <File FileName="Assets\Scripts\Goblin.cs" Line="39" Column="28" />
+      <File FileName="Assets\Scripts\EnemySpawn.cs" Line="58" Column="4" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\HumanWarrior.cs" Line="53" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
